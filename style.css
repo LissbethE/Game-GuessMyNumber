@@ -1,0 +1,424 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url('https://img.freepik.com/vector-gratis/invierno-montanas-paisaje-paisaje-naturaleza-escena_107791-11079.jpg?w=996&t=st=1650044501~exp=1650045101~hmac=b615ef4b7566e949f418229e45050edfa1ff9b00d963c20cd713d9db044e7bfb');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-oso {
+  flex: 50%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/*? O S O */
+
+.oso {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  z-index: 15;
+  background-color: #eaeaea;
+  box-shadow: 0 3.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+.cabeza {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background-color: #eaeaea;
+  position: absolute;
+  top: -50%;
+  left: 11%;
+}
+.cabeza::before {
+  content: ' ';
+  width: 1.4rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  box-shadow: 4rem 0 #000;
+}
+.cabeza::after {
+  content: ' ';
+  width: 2rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 58%;
+  left: 40%;
+}
+
+.orejas {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #eaeaea;
+  position: absolute;
+  top: -60%;
+  left: 4%;
+  box-shadow: 8rem 0 #eaeaea;
+}
+.orejas::before {
+  content: ' ';
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: pink;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  box-shadow: 8.3rem -0.2rem pink;
+}
+
+.patitas {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: #eaeaea;
+  position: absolute;
+  top: 65%;
+  left: -10%;
+  box-shadow: 10rem 0 #eaeaea;
+}
+.patitas::before {
+  content: ' ';
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: pink;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  box-shadow: 9.5rem 0 pink;
+}
+.patitas::after {
+  content: ' ';
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: pink;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  box-shadow: 1.5rem -2rem 0 pink, 4rem -2rem 0 pink, 10rem -1rem 0 pink,
+    12.4rem -2.4rem 0 pink, 14.6rem -1rem 0 pink;
+}
+
+/*? H I E L O */
+.hielo {
+  width: 15rem;
+  height: 5rem;
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  z-index: 3;
+  border-radius: 0.7rem;
+  background-color: #f5f1fb;
+  color: #222;
+  font-size: 2rem;
+  text-align: center;
+
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.4);
+
+  transition: all 0.2s ease-in;
+  opacity: 1;
+}
+
+/* bloque de asiento */
+.hielo-4 {
+  top: 90%;
+  left: 30%;
+}
+.hielo-2 {
+  top: 83%;
+  left: 25%;
+}
+.hielo-3 {
+  top: 83%;
+  left: 66%;
+}
+.hielo-1 {
+  top: 83%;
+  left: 46%;
+}
+.hielo-5 {
+  top: 76%;
+  left: 30%;
+}
+.hielo-6 {
+  top: 76%;
+  left: 51%;
+}
+.hielo-7 {
+  top: 76%;
+  left: 71%;
+}
+.hielo-8 {
+  top: 90%;
+  left: 51%;
+}
+.hielo-9 {
+  top: 72%;
+  left: 51%;
+
+  z-index: 1;
+}
+.hielo-10 {
+  top: 92%;
+  left: 0%;
+}
+
+/* bloque fuera del asiento del oso */
+.hielo-11 {
+  top: 70%;
+  left: 0%;
+}
+
+.hielo-12 {
+  top: 92%;
+  left: 90%;
+}
+
+.hielo-13 {
+  top: 75%;
+  left: 110%;
+}
+
+.hielo-14 {
+  top: 80%;
+  left: 155%;
+}
+.hielo-15 {
+  top: 85%;
+  left: 150%;
+}
+.hielo-16 {
+  top: 85%;
+  left: 160%;
+}
+
+.hielo-17 {
+  width: 15rem;
+  top: 80%;
+  left: -15%;
+}
+
+.hielo-18 {
+  width: 10rem;
+  top: 70%;
+  left: 113%;
+}
+.hielo-19 {
+  top: 92%;
+  left: 110%;
+}
+.hielo-20 {
+  top: 71%;
+  left: 180%;
+}
+
+.active {
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  transform: translateY(1.5rem);
+}
+
+.wavy {
+  width: 150%;
+  height: 20rem;
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  z-index: 1;
+  background-image: url('https://img.freepik.com/vector-gratis/invierno-montanas-paisaje-paisaje-naturaleza-escena_107791-11079.jpg?w=996&t=st=1650044501~exp=1650045101~hmac=b615ef4b7566e949f418229e45050edfa1ff9b00d963c20cd713d9db044e7bfb');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  animation: wavy 5s infinite linear;
+}
+
+@keyframes wavy {
+  0% {
+    background-position-x: -400px;
+  }
+  100% {
+    background-position-x: 118px;
+  }
+}
+
+/*? C O N T E N I D O */
+.game {
+  flex: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  z-index: 3;
+}
+
+.styleGame-1 {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+
+  color: #000;
+}
+.styleGame-1 .title {
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.styleGame-2 {
+  color: #fff;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.styleGame-2 .title {
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 9rem 0 7rem 0;
+}
+
+header .between {
+  position: absolute;
+  right: 4%;
+  top: 6%;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
+
+header .btn {
+  position: absolute;
+  left: 4%;
+  top: 4%;
+  border: none;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 800;
+  font-family: inherit;
+  border-radius: 0.7rem;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+
+  transition: all 0.3s;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+header .btn:active {
+  transform: scale(0.98);
+}
+
+header .number {
+  font-size: 6rem;
+  width: 15rem;
+  padding: 1rem 0rem;
+  border-radius: 0.7rem;
+  color: #000;
+  background-color: #f5f1fb;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+main {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+}
+
+main .left {
+  text-align: center;
+}
+main .left .guess {
+  display: block;
+  width: 25rem;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 5rem;
+  font-family: inherit;
+  border: 0.4rem solid #222;
+  border-radius: 1rem;
+  background: none;
+}
+main .left .btn {
+  border: none;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 800;
+  border-radius: 0.7rem;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+main .btn:active {
+  transform: scale(0.98);
+}
+
+main .right .message {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+main .right .label-score,
+main .right .label-highscore {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}

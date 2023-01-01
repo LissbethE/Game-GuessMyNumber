@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Shalimar&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>🐻‍❄️ Guess My Number</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wavy"></div>
+
+      <div class="container-oso">
+        <div class="oso">
+          <div class="orejas"></div>
+          <div class="cabeza"></div>
+          <div class="patitas"></div>
+        </div>
+
+        <div class="container-hielo">
+          <div class="hielo-1 hielo"></div>
+          <div class="hielo-2 hielo"></div>
+          <div class="hielo-3 hielo"></div>
+          <div class="hielo-4 hielo"></div>
+          <div class="hielo-5 hielo"></div>
+          <div class="hielo-6 hielo"></div>
+          <div class="hielo-7 hielo"></div>
+          <div class="hielo-8 hielo"></div>
+          <div class="hielo-9 hielo"></div>
+          <div class="hielo-10 hielo"></div>
+
+          <div class="hielo-11 hielo"></div>
+          <div class="hielo-12 hielo"></div>
+          <div class="hielo-13 hielo"></div>
+          <div class="hielo-14 hielo"></div>
+          <div class="hielo-15 hielo"></div>
+          <div class="hielo-16 hielo"></div>
+
+          <div class="hielo-17 hielo"></div>
+          <div class="hielo-18 hielo"></div>
+          <div class="hielo-19 hielo"></div>
+          <div class="hielo-20 hielo"></div>
+        </div>
+      </div>
+
+      <div class="game styleGame-1">
+        <header>
+          <h1 class="title">Guess My Number!</h1>
+          <p class="between">(Between 1 and 20)</p>
+          <button class="btn btn-again" id="btn-again">Again!</button>
+          <div class="number">?</div>
+        </header>
+
+        <main>
+          <section class="left">
+            <input type="number" class="guess" />
+            <button class="btn btn-check">Check!</button>
+          </section>
+          <section class="right">
+            <p class="message">Start guessing...</p>
+            <p class="label-score">💯 Score: <span class="score">20</span></p>
+            <p class="label-highscore">
+              🥇 Highscore:<span class="highscore">0</span>
+            </p>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
